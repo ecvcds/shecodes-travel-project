@@ -10,9 +10,9 @@ body{
 }
 
 section{
-    max-width: 1600px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 50px 50px;
+    padding: 100px;
  }
 
 .grid{
@@ -23,73 +23,28 @@ section{
 .grid-2-columns{
     grid-template-columns: 1fr 1fr;
 }
-
 .grid-3-columns{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-different{
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-
-img{
-    object-fit: cover;
-    object-position: middle;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-}
-/* Media queries */
-@media (max-width: 900px){
-    img{
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        object-position: middle;
-        position: initial;
-    }
-    
-    .image-container{
-        text-align: center;
-        padding: 20px;
-        position: initial;
-    
-    }
-    .grid-3-columns, .grid-2-columns{
-        grid-template-columns: 1fr;
-        grid-gap: 32px;
-    }
-    
-    header{
-        padding: 60px 0;
-    }
-
-    header h1{
-        margin: 20px;
-        font-size: 48px;
-    }
-    
-    header h2{
-        font-size: 15px;
-    }
-    
-    header h3{
-        font-size: 12px;
-    }
-
-   
-    footer h3{
-        font-size: 10px;
-
-     }
-    
-     footer p{
-        font-size: 8px;
-     }
-
-
+.btn{
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: black;
+    text-decoration: none;
 
 }
+
 
 /* Header */
 header{
@@ -166,6 +121,20 @@ main h3{
 
 }
 
+main h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    margin:0;
+}
+
+main h5{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    margin: 0;
+}
+
 main p{
     font-style: normal;
     font-weight: 400;
@@ -174,19 +143,50 @@ main p{
     opacity: 0.7;
 }
 
-/* Section 1 - Why Los Angels? */
-
 .image-container{
     text-align: center;
     padding: 20px;
     position: relative;
-
-}
-.image-container p{
-    color: black;
-    opacity: 0.7;
 }
 
+.image-container img{
+    object-fit: cover;
+    object-position: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Section 1 - Why Los Angels? */
+
+
+/* Section 2 - Cafés */
+
+section.secondary{
+    background-color: rgba(128,128,128,0.2);
+}
+section.secondary h3, section.secondary h2{
+    text-align: center;
+    
+}
+
+.card{
+    background-color: white;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: none;
+}
+.card-body{
+    padding: 30px;
+}
+
+.card-header{
+    display: grid;
+    padding: 10px;
+}
 
 
 /* Footer */
@@ -229,3 +229,54 @@ footer{
  }
 
 
+/* Media queries */
+@media (max-width: 900px){
+    .image-container img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: middle;
+        position: initial;
+    }
+    
+    .image-container{
+        text-align: center;
+        padding: 20px;
+        position: initial;
+    
+    }
+    .grid-3-columns, .grid-2-columns{
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    
+    header{
+        padding: 60px 0;
+    }
+
+    header h1{
+        margin: 20px;
+        font-size: 48px;
+    }
+    
+    header h2{
+        font-size: 15px;
+    }
+    
+    header h3{
+        font-size: 12px;
+    }
+
+   
+    footer h3{
+        font-size: 10px;
+
+     }
+    
+     footer p{
+        font-size: 8px;
+     }
+
+
+
+}
