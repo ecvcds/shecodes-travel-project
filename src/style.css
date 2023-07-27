@@ -12,10 +12,54 @@ body{
 section{
     max-width: 1600px;
     margin: 0 auto;
+    padding: 50px 50px;
  }
 
+.grid{
+    display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-columns{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns{
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+
+img{
+    object-fit: cover;
+    object-position: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
 /* Media queries */
 @media (max-width: 900px){
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: middle;
+        position: initial;
+    }
+    
+    .image-container{
+        text-align: center;
+        padding: 20px;
+        position: initial;
+    
+    }
+    .grid-3-columns, .grid-2-columns{
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    
     header{
         padding: 60px 0;
     }
@@ -32,7 +76,18 @@ section{
     header h3{
         font-size: 12px;
     }
+
+   
+    footer h3{
+        font-size: 10px;
+
+     }
     
+     footer p{
+        font-size: 8px;
+     }
+
+
 
 }
 
@@ -87,12 +142,58 @@ header a{
 
 }
 
+/* Main */
+
+main{
+    background-color: white;
+}
+
+main h2{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+
+}
+
+main p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+/* Section 1 - Why Los Angels? */
+
+.image-container{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+.image-container p{
+    color: black;
+    opacity: 0.7;
+}
+
+
+
 /* Footer */
 footer{
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,09)), url(../resources/images/footer-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px 0;
     color: white;
  }
 
@@ -128,7 +229,3 @@ footer{
  }
 
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-}
