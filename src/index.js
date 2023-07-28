@@ -5,7 +5,7 @@ var buttons = document.querySelectorAll(".btn");
 checkbox.addEventListener("click", function() {
   if (checkbox.checked) {
 
-    body.style.background = "linear-gradient(to right, #141e30, #243b55)";
+    body.style.background = "linear-gradient(to right, #232526, #414345)";
     body.style.color = "white";
     buttons.forEach(button =>{
         button.style.background = "white";
