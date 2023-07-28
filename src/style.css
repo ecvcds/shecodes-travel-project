@@ -2,6 +2,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    transition: 0.8s ease;
+    background-color: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+
 }
 
 .container{
@@ -12,9 +16,12 @@ body{
 section{
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 70px;
  }
 
+.rmv{
+    display: block;
+}
 .grid{
     display: grid;
     grid-gap: 64px;
@@ -46,14 +53,95 @@ section{
 }
 
 
+.whiteTheme{
+    color: black;
+
+}
+
+.blackTheme{
+    color: white;
+    
+}
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    /* The slider */
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+
+    input:checked + .slider {
+    background-color: black;
+    }
+
+    input:focus + .slider {
+    box-shadow: 0 0 1px black;
+    }
+
+    input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+    border-radius: 34px;
+    }
+
+    .slider.round:before {
+    border-radius: 50%;
+    }
+
 /* Header */
 header{
    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(255,255,255,0.3)), url(../resources/images/hero-background.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   background-position: bottom;
    text-align: center;
    padding: 200px 0;
    color: white;
+   margin: 0;
+   position: relative;
+}
+
+.themeSwitch{
+  position: absolute;
+  top: 5%;
+  right: 1%;
 }
 
 header h1{
@@ -99,9 +187,6 @@ header a{
 
 /* Main */
 
-main{
-    background-color: white;
-}
 
 main h2{
     font-weight: 300;
@@ -138,9 +223,10 @@ main h5{
 main p{
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     opacity: 0.7;
+    text-align: justify;
 }
 
 .image-container{
@@ -165,19 +251,20 @@ main p{
 
 /* Section 2 - Cafés */
 
-section.secondary{
-    background-color: rgba(128,128,128,0.2);
-}
-section.secondary h3, section.secondary h2{
+
+section h3, section h2{
     text-align: center;
     
 }
 
 .card{
-    background-color: white;
     margin: 30px 0;
     border-radius: 10px;
     border: none;
+}
+
+.card p{
+    font-size: 12px;
 }
 .card-body{
     padding: 30px;
@@ -188,7 +275,32 @@ section.secondary h3, section.secondary h2{
     padding: 10px;
 }
 
+.embed{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
 
+/* Section 3 - Gallery */
+
+.gallery{
+    margin: 0 auto;
+    padding: 30px;
+}
+.gallery .grid{
+    grid-gap:32px ;
+}
+
+.box{
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.gallery iframe{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
 /* Footer */
 footer{
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,09)), url(../resources/images/footer-background.jpg);
@@ -197,6 +309,11 @@ footer{
     color: white;
  }
 
+ footer section{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px;
+ }
  footer h3{
     font-weight: 700;
     font-size: 20px;
@@ -206,7 +323,6 @@ footer{
  footer a{
     color: white;
     opacity: 0.7;
-   
  }
 
  footer ul {
@@ -217,12 +333,13 @@ footer{
    list-style: none;
    margin: 0;
    padding: 0;
+   
  }
 
  footer p{
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: white;
     opacity: 0.7;
     margin-left: 5px;
@@ -237,17 +354,17 @@ footer{
         object-fit: cover;
         object-position: middle;
         position: initial;
+        display: block;
     }
     
     .image-container{
         text-align: center;
-        padding: 20px;
         position: initial;
-    
+        margin: 0;
     }
-    .grid-3-columns, .grid-2-columns{
+    .grid-3-columns,.grid-3-columns-different, .grid-2-columns{
         grid-template-columns: 1fr;
-        grid-gap: 32px;
+        grid-gap: 10px;
     }
     
     header{
@@ -259,24 +376,51 @@ footer{
         font-size: 48px;
     }
     
-    header h2{
-        font-size: 15px;
-    }
-    
-    header h3{
+    header h2, main h2{
         font-size: 12px;
     }
-
-   
-    footer h3{
-        font-size: 10px;
-
-     }
     
-     footer p{
-        font-size: 8px;
+    header h3, main h3{
+        font-size: 20px;
+    }   
+
+    
+    main h4{
+        font-size: 20px;
+    }
+    
+    main h5{
+        font-size: 13px;
+    }
+   
+    
+     .rmv{
+        display: none;
      }
 
+     .card{
+        margin: 0;
+     }
 
+     .embed{
+        aspect-ratio: 16/9;
+     }
+
+     section{
+        padding: 10px;
+        margin: 30px 0;
+     }
+
+     .card-header{
+        padding: 0;
+     }
+
+     .gallery iframe{
+        aspect-ratio: 4/3;
+    }
+
+    .box{
+        border-radius: 120px;
+    }
 
 }

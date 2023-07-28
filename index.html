@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Angeles</title>
+    <!-- Css file -->
     <link rel="stylesheet" href="/src/style.css">
+ 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,45 +15,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <!-- Hero -->
-            <h3>.Travel.</h3>
+    <!-- Header -->
+      <header>
+        <div class="themeSwitch">
+            <label class="switch">
+                <input type="checkbox" id="switch-Theme" >
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <!-- Hero -->
+        <section>
+           <h3>.Travel.</h3>
             <h1>Welcome to Los Angeles</h1>
             <h2>The center of Hollywood and movie culture.</h2>
-            <a href="#">Explore</a>
-
-        </header>
+            <a href="#">Explore</a> 
+        </section>
         
+
+    </header>
+    <!-- main container -->
+    <div class="container"> 
         <main>
-            <section class="grid grid-2-columns">
-                <div class="image-container">                
-                    <img src="./resources/images/city-of-angels.jpg" alt="City of Angels">
-                    <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
-                </div>
-                <div>
+            <!-- Why los angeles -->
+            <section>
+                <article>
                     <h2>Why Los Angeles?</h2>
                     <h3>The City of Angels</h3>
-                    <p>
+                    <p style="padding-left: 30px; padding-right: 30px;">
                         Los Angeles is a vibrant and iconic metropolis located in Southern California, USA. 
                         Renowned for its glitz, glamour, and entertainment industry, the city holds a magnetic appeal that draws people from all walks of life. 
                         Boasting a stunning coastline, it offers a perfect blend of urban sprawl and natural beauty. Los Angeles is a melting pot of diverse cultures, evident in its diverse neighborhoods and delectable culinary scene. 
                         As the heart of the global film and television industry, Hollywood stands as a symbol of the city's artistic creativity and cinematic history. Beyond the fame and fortune, Los Angeles also embraces a thriving arts scene, world-class museums, and captivating landmarks like the Griffith Observatory and the iconic Hollywood Sign. Embracing the spirit of ambition and innovation, Los Angeles continues to evolve, making it a dynamic and exciting destination for residents and visitors alike.
                     </p>
+                </article>
+                <div class="grid grid-2-columns">
+
+                    <div class="image-container rmv">                
+                        <img src="./resources/images/city-of-angels.jpeg" alt="City of Angels">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    
+                    <article>                
+                        <h3>Iconic Landmarks and Attractions</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            Los Angeles boasts an array of iconic landmarks that have become symbols of the city's allure. The famous Hollywood Sign perched on the hills overlooking the city is an enduring emblem of the entertainment industry that thrives here. The Walk of Fame, with its star-studded sidewalk, pays homage to the countless artists who have left their indelible mark on Hollywood's history. The TCL Chinese Theatre, famous for its handprints and footprints of Hollywood stars, is another must-visit destination for movie enthusiasts. For those seeking a taste of luxury, Rodeo Drive in Beverly Hills offers high-end shopping and a glimpse into the glamorous lifestyle of the rich and famous.
+                        </p>                
+                    </article>
+                    <article>
+                        <h3>Rich History and Cultural Melting Pot</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            Los Angeles' fascinating history is marked by various cultural influences that have shaped its identity. From its early roots as a Spanish colonial settlement to its transformation into a major American city during the California Gold Rush, the city's journey has been one of constant growth and evolution. Today, Los Angeles is a true cultural melting pot, attracting people from all corners of the globe. Its diverse population contributes to a rich tapestry of customs, traditions, and flavors, making it a truly global city with a warm and welcoming spirit.
+                        </p>
+                    </article>
+                    <div class="image-container rmv">                
+                        <img src="./resources/images/panoramic-1.jpeg" alt="Los Angeles panoramic view">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    <div class="image-container rmv">                
+                        <img src="./resources/images/hollywood.jpeg" alt="Hollywood sign">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    <article>
+                        <h3>Entertainment Capital of the World</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            As the "Entertainment Capital of the World," Los Angeles holds a special place in the hearts of artists and dreamers. Hollywood, the epicenter of this cinematic universe, draws aspiring actors, filmmakers, and musicians from across the globe, all seeking their chance to make it big in the entertainment industry. With numerous film studios, production companies, and a thriving arts scene, the city buzzes with creative energy, making it an exciting and dynamic place to visit. Visitors can take studio tours to get a behind-the-scenes look at their favorite shows and movies, or attend live tapings of popular TV shows.
+                        </p>
+                    </article>
+                    
+                    <article>
+                        <h3>Art, Culture, and Museums</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            Los Angeles' cultural landscape is equally captivating, with a diverse range of artistic expressions to explore. Art enthusiasts will find their haven in the city's world-class museums, such as the Getty Center, LACMA, and The Broad, which house impressive collections of both classic and contemporary art. The Getty Center, perched atop a hill with stunning architecture and sprawling gardens, not only offers exceptional art but also panoramic views of the city. Beyond traditional art, Los Angeles celebrates diversity through vibrant street art and graffiti, giving the city's neighborhoods a distinct and colorful character. The Arts District, known for its ever-changing street art murals, is a must-visit for art lovers.
+                        </p>
+                    </article>
+                     <div class="image-container rmv">                
+                        <img src="./resources/images/art.jpeg" alt="Art museums">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    <div class="image-container rmv">                
+                        <img src="./resources/images/beach.jpeg" alt="Beach">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    <article>
+                        <h3>Beaches and Nature</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            Beyond the urban sprawl, Los Angeles offers a stunning coastline along the Pacific Ocean, providing a perfect backdrop for relaxation and recreation. From the laid-back atmosphere of Santa Monica to the bohemian charm of Venice Beach, the city's beach culture is an integral part of its identity. Visitors can soak up the sun, stroll along the iconic boardwalks, and enjoy a wide range of activities, from beach volleyball to rollerblading. Nature lovers can venture into the nearby Santa Monica Mountains, where scenic hiking trails lead to breathtaking vistas of the city and its surroundings. Griffith Park, one of the largest urban parks in the country, offers hiking trails, the Griffith Observatory, and the iconic Hollywood Sign overlook.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Foodie Paradise</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            Los Angeles is a food lover's paradise, with a culinary scene that spans the globe. From Michelin-starred restaurants to eclectic food trucks, the city satisfies every palate and craving. Notably, Los Angeles has emerged as a mecca for vegan and vegetarian cuisine, with top-notch restaurants elevating plant-based dining to new heights. Beyond that, diverse ethnic neighborhoods offer authentic international flavors, from mouthwatering Mexican tacos in East LA to delectable Asian fusion dishes in Little Tokyo and Koreatown. Food markets like the Grand Central Market and Smorgasburg LA bring together a variety of vendors offering tantalizing food options in a lively setting.
+                        </p>
+                    </article>
+                    <div class="image-container rmv">                
+                        <img src="./resources/images/restaurants.jpeg" alt="Restaurants">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    <div class="image-container rmv">                
+                        <img src="./resources/images/night.jpeg" alt="Nightlife">
+                        <!-- <p><caption>Photo by <a href="https://unsplash.com/@gersonrepreza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gerson Repreza</a> on <a href="https://unsplash.com/photos/yZtHljVT-1M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </caption> </p> -->
+                    </div>
+                    
+                    <article>
+                        <h3>Exciting Nightlife</h3>
+                        <p style="padding-left: 30px; padding-right: 30px;">
+                            As the sun sets, Los Angeles comes alive with an exciting nightlife scene that caters to every taste and mood. From trendy rooftop bars with panoramic city views to pulsating dance clubs and intimate jazz lounges, the city offers a plethora of options to unwind and enjoy the night. Whether you seek a glamorous night out in Hollywood, where you might spot celebrities at the iconic Chateau Marmont or catch a live show at the legendary Troubadour, or a laid-back evening in one of the city's trendy neighborhoods like Silver Lake or Echo Park, Los Angeles promises an unforgettable nightlife experience.
+                        </p>
+                    </article>
+                    
                 </div>
             </section>
-            <section class="secondary">
-                <h2>CAFÉS</h2>
-                <h3>My favourite cafés in Los Angeles</h3>
+  
+            <!-- Restaurant section -->
+            <section>
+                <h2>Restaurants</h2>
+                <h3>Vegan Restaurants in Los Angeles</h3>
                 <div class="grid grid-3-columns">
                     <div class="card">
                         <div class="card-header grid-2-columns">
-                            <div class="image-container">
+                            <div class="image-container rmv">
                                 <img src="./resources/images/crossroads-kitchen.jpeg" alt="Vegan Restaurant Crossroads">
                             </div>
                             <div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.4532697312065!2d-118.37273192357586!3d34.08352697314515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2beb619bd9c85%3A0xecea7843a404b140!2sCrossroads%20Kitchen!5e0!3m2!1spt-PT!2spt!4v1690467084162!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe class="embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.4532697312065!2d-118.37273192357586!3d34.08352697314515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2beb619bd9c85%3A0xecea7843a404b140!2sCrossroads%20Kitchen!5e0!3m2!1spt-PT!2spt!4v1690467084162!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div>
@@ -71,11 +160,11 @@
                     </div>
                     <div class="card">
                         <div class="card-header grid-2-columns">
-                            <div class="image-container">
-                                <img src="./resources/images/shojin.jpeg" alt="Vegan Restaurant Shojin">
+                            <div class="image-container rmv">
+                                <img  src="./resources/images/shojin.jpeg" alt="Vegan Restaurant Shojin">
                             </div>
                             <div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211701.36940680895!2d-118.71711871328124!3d33.996799999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba66107b9b43%3A0x995f08a6862baf17!2sShojin!5e0!3m2!1spt-PT!2spt!4v1690469473965!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe class="embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211701.36940680895!2d-118.71711871328124!3d33.996799999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba66107b9b43%3A0x995f08a6862baf17!2sShojin!5e0!3m2!1spt-PT!2spt!4v1690469473965!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div>
@@ -94,11 +183,11 @@
                     </div>
                     <div class="card">
                         <div class="card-header grid-2-columns">
-                            <div class="image-container">
+                            <div class="image-container rmv">
                                 <img src="./resources/images/gracias-madre.jpg" alt="Vegan Restaurant Gracias Madre">
                             </div>
                             <div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.550966215642!2d-118.3891551847842!3d34.0810233805981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2beaf2a9a8cc5%3A0xde9a7d83cd8a971e!2sGracias%20Madre!5e0!3m2!1spt-PT!2spt!4v1690469173297!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe class="embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.550966215642!2d-118.3891551847842!3d34.0810233805981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2beaf2a9a8cc5%3A0xde9a7d83cd8a971e!2sGracias%20Madre!5e0!3m2!1spt-PT!2spt!4v1690469173297!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div>
@@ -117,8 +206,25 @@
                     </div>
                 </div>
             </section>
-        </main>
-        
+            <!-- Gallery -->
+            <section>
+                <h2>Gallery</h2>
+                <h3>Los Angeles photos</h3>
+                <div class="gallery">
+                    <div class="grid grid-3-columns">
+                        <iframe class="box embed" src="https://assets.pinterest.com/ext/embed.html?id=24629129204871696"  frameborder="0" scrolling="no" ></iframe>
+                        <iframe class="box embed" src="https://assets.pinterest.com/ext/embed.html?id=358388082861936517" frameborder="0" scrolling="no" ></iframe>
+                        <iframe class="box embed" src="https://assets.pinterest.com/ext/embed.html?id=334603447329589713" frameborder="0" scrolling="no" ></iframe>
+                    </div>
+                    <div class="grid grid-3-columns">
+                        <iframe class="box embed" src="https://assets.pinterest.com/ext/embed.html?id=335025659783010412" frameborder="0" scrolling="no" ></iframe>
+                        <iframe class="box embed" src="https://assets.pinterest.com/ext/embed.html?id=27092035254536672"  frameborder="0" scrolling="no" ></iframe>
+                        <iframe class="box embed" src="https://assets.pinterest.com/ext/embed.html?id=151363237468039766" frameborder="0" scrolling="no" ></iframe>
+                    </div>
+                </div>
+            </section>
+
+        </main>   
     </div>
         <!-- Footer -->
         <footer>
@@ -139,8 +245,8 @@
     
                 <div>
                     <h3>About the page</h3>
-                    <p>I create this page as part of the project for SheCodes Responsive Add-on. <br>
-                        It is open-sourced @ this amazing <a href="https://github.com/ecvcds/shecodes-travel-project"> Git repo</a> !<br>
+                    <p>I create this page as part of the project for SheCodes Responsive Add-on. Information obtained using ChatGPT 3.5, an AI language model developed by OpenAI, based on the data available up until September 2021. Any events, developments, or changes that occurred after that date will be outside the scope and might be outdated. <br>
+                        The web-site code is open-sourced @ this amazing <a href="https://github.com/ecvcds/shecodes-travel-project"> Git repo</a> !<br>
                         Hero background photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/photos/xxzeV1aiSY8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> <br>
                         Footer background Photo by <a href="https://unsplash.com/@philippe_collard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">philippe collard</a> on <a href="https://unsplash.com/photos/Nqne1PUY9ZY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></a>
                     </p>
@@ -153,4 +259,6 @@
         </footer>
 
 </body>
+   <!-- Js file -->
+   <script src="./src/index.js"></script>
 </html>
