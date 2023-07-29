@@ -365,11 +365,15 @@ footer{
     
     header{
         padding: 60px 0;
+        height: 50vw;
     }
 
+    section p{
+        font-size: 10px !important; 
+    }
     header h1{
         margin: 20px;
-        font-size: 48px;
+        font-size: 30px !important;
     }
     
     header h2, main h2{
@@ -377,10 +381,13 @@ footer{
     }
     
     header h3, main h3{
-        font-size: 20px;
-    }   
-
+        font-size: 15px;
+    } 
     
+    header a {
+        font-size: 12px;
+    }
+
     main h4{
         font-size: 20px;
     }
@@ -418,5 +425,10 @@ footer{
     .box{
         border-radius: 120px;
     }
+
+    .switch {
+       display: none;
+     }
+  
 
 }
